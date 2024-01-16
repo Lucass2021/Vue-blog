@@ -1,13 +1,20 @@
 <template>
   <div>
-    <h1>Hello world</h1>
+    <HeaderComponent/>
   </div>
 </template>
 
 <script setup>
+import HeaderComponent from './components/HeaderComponent.vue';
+
 
 </script>
 
-<style scoped>
+<style>
+  * {
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+    }
 
 </style>
