@@ -52,6 +52,4 @@ h1 span{
     color: #fff;
 }
 
-/* font-family: 'Inter', sans-serif;*/
-
 </style>
