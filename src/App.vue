@@ -1,6 +1,7 @@
 <template>
   <div>
     <HeaderComponent/>
+    <PostsBodyComponent/>
     <!-- Information: -->
     <!-- <font-awesome-icon :icon="['fas', 'search']" />
     <font-awesome-icon :icon="['fas', 'heart']" />
@@ -11,6 +12,7 @@
 
 <script setup>
 import HeaderComponent from './components/HeaderComponent.vue';
+import PostsBodyComponent from './components/PostsBodyComponent.vue';
 
 
 </script>

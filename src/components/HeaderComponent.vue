@@ -70,11 +70,36 @@ h1 span{
     padding-left: 50px;
     align-items: center;
     gap: 16px;
-    min-width: 1200px;
+    width: 1200px;
     border-radius: 8px;
     border: 2px solid #252529;
     background: #202024;
     color: #fff;
+}
+
+
+@media only screen and (max-width: 1400px) {
+    .search input{
+        width: 800px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .search input{
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .search input{
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    .search input{
+        width: 300px;
+    }
 }
 
 </style>
