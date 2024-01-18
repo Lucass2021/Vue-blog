@@ -1,14 +1,14 @@
 <template>
     <div class="container">
         <div class="posts-container">
-            <div class="posts">
-                <h1>blog</h1>
-            </div>
+            <PostComponent/>
         </div>
     </div>
 </template>
 
 <script setup>
+import PostComponent from './PostComponent.vue';
+
 
 </script>
 
@@ -24,11 +24,6 @@
         width: 1200px;
     }
 
-    .posts{
-        border-radius: 8px;
-        border: 2px solid #252529;
-        background: #17171A;
-    }
 
     @media only screen and (max-width: 1400px) {
         .posts-container{
