@@ -2,7 +2,7 @@
   <div>
     <div class="posts">
       <div class="post-info">
-        <span>{{ props.id }}</span>
+        <span>Post Id: {{ props.id }}</span>
         <div @mouseover="handleMouseOver" @mouseout="handleMouseOut" @click="handleFavorite">
             <font-awesome-icon v-show="regularHeart" class="heartIcon" :icon="['far', 'heart']" />
             <font-awesome-icon v-show="solidHeart" class="heartIcon" :icon="['fas', 'heart']" />
@@ -17,7 +17,7 @@
 <script setup>
     import { ref, defineProps} from 'vue'
     const props = defineProps({
-      id: Number,
+      id: String,
       title: String,
       text: String,
     })
