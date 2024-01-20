@@ -1,8 +1,8 @@
 <template>
     <div class="posts">
       <div class="post-info">
-        <span>17 de ago, 2024</span>
-        <div @mouseover="handleMouseOver" @mouseout="handleMouseOut">
+        <span>Aug 17, 2024</span>
+        <div @mouseover="handleMouseOver" @mouseout="handleMouseOut" @click="handleFavorite">
             <font-awesome-icon v-show="regularHeart" class="heartIcon" :icon="['far', 'heart']" />
             <font-awesome-icon v-show="solidHeart" class="heartIcon" :icon="['fas', 'heart']" />
         </div>
@@ -15,6 +15,7 @@
 
     let regularHeart = ref(true)
     let solidHeart = ref(false)
+    let clickedFavorite = ref(false)
 
     const handleMouseOver = () => {
         regularHeart.value = false
@@ -22,9 +23,17 @@
     };
 
     const handleMouseOut = () => {
-        regularHeart.value = true
-        solidHeart.value = false
+        if(clickedFavorite.value === false){
+          regularHeart.value = true
+          solidHeart.value = false
+        }
     };
+
+    const handleFavorite = () => {
+        clickedFavorite.value = !clickedFavorite.value
+        regularHeart.value = !regularHeart.value
+        solidHeart.value = !solidHeart.value
+    }
 
 </script>
 
