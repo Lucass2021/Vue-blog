@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="posts-container">
-            <PostComponent/>
+            <PostComponent id="1" title="Albert" text="jotapeg"/>
         </div>
     </div>
 </template>

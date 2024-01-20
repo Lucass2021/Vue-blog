@@ -2,32 +2,25 @@
   <div>
     <div class="posts">
       <div class="post-info">
-        <span>Aug 17, 2024</span>
+        <span>{{ props.id }}</span>
         <div @mouseover="handleMouseOver" @mouseout="handleMouseOut" @click="handleFavorite">
             <font-awesome-icon v-show="regularHeart" class="heartIcon" :icon="['far', 'heart']" />
             <font-awesome-icon v-show="solidHeart" class="heartIcon" :icon="['fas', 'heart']" />
         </div>
       </div>
-      <h2>What is programming language? Get to know the main ones.</h2>
-      <p>One of the most popular branches of information technology, the programming field continues to have a high demand for work precisely due to the speed at which technological devices are advancing.</p>
-    </div>
-
-    <div class="posts">
-      <div class="post-info">
-        <span>Aug 17, 2024</span>
-        <div @mouseover="handleMouseOver" @mouseout="handleMouseOut" @click="handleFavorite">
-            <font-awesome-icon v-show="regularHeart" class="heartIcon" :icon="['far', 'heart']" />
-            <font-awesome-icon v-show="solidHeart" class="heartIcon" :icon="['fas', 'heart']" />
-        </div>
-      </div>
-      <h2>What is programming language? Get to know the main ones.</h2>
-      <p>One of the most popular branches of information technology, the programming field continues to have a high demand for work precisely due to the speed at which technological devices are advancing.</p>
+      <h2>{{ props.title }}</h2>
+      <p>{{ props.text }}</p>
     </div>
   </div>
 </template>
 
 <script setup>
-    import { ref } from 'vue'
+    import { ref, defineProps} from 'vue'
+    const props = defineProps({
+      id: Number,
+      title: String,
+      text: String,
+    })
 
     let regularHeart = ref(true)
     let solidHeart = ref(false)

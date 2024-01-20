@@ -2,11 +2,6 @@
   <div>
     <HeaderComponent/>
     <PostsBodyComponent/>
-    <!-- Information: -->
-    <!-- <font-awesome-icon :icon="['fas', 'search']" />
-    <font-awesome-icon :icon="['fas', 'heart']" />
-    <font-awesome-icon :icon="['far', 'heart']" /> -->
-    <!-- font-family: 'Inter', sans-serif; -->
   </div>
 </template>
 
