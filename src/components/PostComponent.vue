@@ -50,16 +50,16 @@
 .posts {
   display: flex;
   flex-direction: column;
-  padding: 40px;
-  border-radius: 8px;
-  border: 2px solid #252529;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 0.125rem solid #252529;
   background: #17171A;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 .posts:hover{
-    border-radius: 8px;
-    border: 2px solid #E07B67;
+    border-radius: 0.5rem;
+    border: 0.125rem solid #E07B67;
     background: #17171A;
     transition: all 0.3s ease-in-out;
 }
@@ -69,13 +69,13 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .posts .post-info span {
   color: #E07B67;
   font-family: Inter, monospace;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -83,24 +83,24 @@
 
 .posts .post-info .heartIcon {
   color: #E07B67;
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
   cursor:pointer;
 }
 
 .posts h2{
   color: #FFF;
   font-family: "Space Grotesk", monospace;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 500;
-  margin-bottom: 15px;
+  margin-bottom: 0.938rem;
 }
 
 .posts p{
   color: #AFABB6;
   font-family: Inter, monospace;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
-  line-height: 32px
+  line-height: 2rem;
 }
 </style>

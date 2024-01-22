@@ -41,32 +41,32 @@ onMounted(() => {
 
     .posts-container{
         margin:0 auto;
-        padding: 80px 0px;
-        width: 1200px;
+        padding: 5rem 0rem;
+        width: 75rem;
     }
 
 
     @media only screen and (max-width: 1400px) {
         .posts-container{
-            width: 800px;
+            width: 50rem;
         }
     }
 
     @media only screen and (max-width: 1000px) {
         .posts-container{
-            width: 600px;
+            width: 37.5rem;
         }
     }
 
     @media only screen and (max-width: 768px) {
         .posts-container{
-            width: 500px;
+            width: 31.25rem;
         }
     }
 
     @media only screen and (max-width: 568px) {
         .posts-container{
-            width: 300px;
+            width: 18.75rem;
         }
     }
 </style>

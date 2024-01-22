@@ -22,18 +22,18 @@
 
 .header-container{
     background: #17171A;
-    padding:50px 0px;
+    padding:3.125rem 0rem;
 }
 
 h1{
     text-align: center;
     color: #FFF;
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin-bottom:40px;
+    margin-bottom:2.5rem;
 }
 
 h1 span{
@@ -52,27 +52,27 @@ h1 span{
 .search button{
     background: none;
     border:none;
-    padding:16px;
+    padding:1rem;
     position: absolute;
-    left: 0px;
+    left: 0rem;
     cursor:pointer;
 }
 
 .search .searchIcon{
     color: #E07B67;
-    width: 16px;
-    height: 16px;
+    width: 1rem;
+    height: 1rem;
 }
 
 .search input{
     display: flex;
-    padding: 16px 24px;
-    padding-left: 50px;
+    padding: 1rem 1.5rem;
+    padding-left: 3.125rem;
     align-items: center;
-    gap: 16px;
-    width: 1200px;
-    border-radius: 8px;
-    border: 2px solid #252529;
+    gap: 1rem;
+    width: 75rem;
+    border-radius: 0.5rem;
+    border: 0.125rem solid #252529;
     background: #202024;
     color: #fff;
 }
@@ -80,25 +80,25 @@ h1 span{
 
 @media only screen and (max-width: 1400px) {
     .search input{
-        width: 800px;
+        width: 50rem;
     }
 }
 
 @media only screen and (max-width: 1000px) {
     .search input{
-        width: 600px;
+        width: 37.5rem;
     }
 }
 
 @media only screen and (max-width: 768px) {
     .search input{
-        width: 500px;
+        width: 31.25rem;
     }
 }
 
 @media only screen and (max-width: 568px) {
     .search input{
-        width: 300px;
+        width: 18.75rem;
     }
 }
 
